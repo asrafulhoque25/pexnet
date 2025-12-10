@@ -2,243 +2,261 @@
 
 @theme {
 
-  --color-primary-main: #076AAB;
-  --color-primary-shad: #EAF4FA;
-  --color-primary-forgeine: #90C9EE;
-  --color-primary-dark: #002F4D;
-  --color-secondary-main: #BDEB11;
-  --color-secondary-shad: #F7FAEB;
-  --color-secondary-forgeine: #E0EFA8;
-  --color-secondary-dark: #566C01;
-  --color-info-main: #3B82F6;
-  --color-info-shad: #BFDBFE;
-  --color-success-main: #22C55E;
-  --color-succss-shad: #BBF7D0;
-  --color-warning-main: #EAB308;
-  --color-warning-shad: #FEF08A;
-  --color-critical-main: #EF4444; 
-  --color-critical-shad: #FECACA;
-  --color-bgbody: #9CA3AF;
-  --color-bgdark: #111827;
-  --color-text-defult: #1F2937;
-  --color-text-body: #737373;
-  --color-text-dark: #111827;
-  --color-text-white: #ffffff;
-  --color-border-subtitle: #1F2937;
-  --color-border-heavy: #D4D4D4;
-  --color-bgbg: #F3F4F6;
-  --color-gray-300: #D1D5DB;
+    --color-primary-main: #076AAB;
+    --color-primary-shad: #EAF4FA;
+    --color-primary-forgeine: #90C9EE;
+    --color-primary-dark: #002F4D;
+    --color-secondary-main: #BDEB11;
+    --color-secondary-shad: #F7FAEB;
+    --color-secondary-forgeine: #E0EFA8;
+    --color-secondary-dark: #566C01;
+    --color-info-main: #3B82F6;
+    --color-info-shad: #BFDBFE;
+    --color-success-main: #22C55E;
+    --color-succss-shad: #BBF7D0;
+    --color-warning-main: #EAB308;
+    --color-warning-shad: #FEF08A;
+    --color-critical-main: #EF4444;
+    --color-critical-shad: #FECACA;
+    --color-bgbody: #9CA3AF;
+    --color-bgdark: #111827;
+    --color-text-defult: #1F2937;
+    --color-text-body: #737373;
+    --color-text-dark: #111827;
+    --color-text-white: #ffffff;
+    --color-border-subtitle: #1F2937;
+    --color-border-heavy: #D4D4D4;
+    --color-bgbg: #F3F4F6;
+    --color-gray-300: #D1D5DB;
+    --color-circle-bg: #90C9EE;
 
 
-  --text-heading1: 5.5rem;
-  --text-heading2: 3rem;
-  --text-heading3: 2.25rem;
-  --text-heading4: 1.875rem;
-  --text-heading5: 1.5rem;
-  --text-heading6: 1.125rem;
-  --text-body1: 20px;
-  --text-body2: 18px;
-  --text-body3: 16px;
-  --text-body4: 14px;
-  --text-button1:20px;
+    --text-heading1: 5.5rem;
+    --text-heading2: 3rem;
+    --text-heading3: 2.25rem;
+    --text-heading4: 1.875rem;
+    --text-heading5: 1.5rem;
+    --text-heading6: 1.125rem;
+    --text-body1: 20px;
+    --text-body2: 18px;
+    --text-body3: 16px;
+    --text-body4: 14px;
+    --text-body5: 12px;
+    --text-button1: 20px;
 
 
-  --font-pogonia: 'Pogonia';
+    --font-pogonia: 'Pogonia';
 }
 
 
-.container{
+.container {
     max-width: 1800px;
     width: 100%;
     margin: auto;
     padding-inline: 20px;
 }
-body{
-    font-family: var(--font-pogonia), sans-serif; 
+
+body {
+    font-family: var(--font-pogonia), sans-serif;
     background-color: #F9FAFB;
 }
 
 
-@layer base{
-    .img-fluid{
+@layer base {
+    .img-fluid {
         max-width: 100%;
         height: auto;
     }
 }
-.section-padding{
+
+.section-padding {
     padding: 120px 0;
 }
 
 /* Pogonia Thin (100) */
 @font-face {
-    font-family: 'Pogonia'; 
+    font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaThin.woff2') format('woff2'),
         url('/assets/fonts/PogoniaThin.woff') format('woff');
-    font-weight: 100; /* font-thin */
+    font-weight: 100;
+    /* font-thin */
     font-style: normal;
     font-display: swap;
 }
 
 /* Pogonia Extra Light */
 @font-face {
-    font-family: 'Pogonia'; 
+    font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaExtraLight.woff2') format('woff2'),
         url('/assets/fonts/PogoniaExtraLight.woff') format('woff');
-    font-weight: 200; /* font-extralight */
+    font-weight: 200;
+    /* font-extralight */
     font-style: normal;
     font-display: swap;
 }
 
 /* Pogonia Light (300) */
 @font-face {
-    font-family: 'Pogonia'; 
+    font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaLight.woff2') format('woff2'),
         url('/assets/fonts/PogoniaLight.woff') format('woff');
-    font-weight: 300; /* font-light */
+    font-weight: 300;
+    /* font-light */
     font-style: normal;
     font-display: swap;
 }
 
 /* Pogonia Regular (400) */
 @font-face {
-    font-family: 'Pogonia'; 
+    font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaRegular.woff2') format('woff2'),
         url('/assets/fonts/PogoniaRegular.woff') format('woff');
-    font-weight: 400; /* font-normal */
+    font-weight: 400;
+    /* font-normal */
     font-style: normal;
     font-display: swap;
 }
 
 /* Pogonia Medium (500) */
 @font-face {
-    font-family: 'Pogonia'; 
+    font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaMedium.woff2') format('woff2'),
         url('/assets/fonts/PogoniaMedium.woff') format('woff');
-    font-weight: 500; /* font-medium */
+    font-weight: 500;
+    /* font-medium */
     font-style: normal;
     font-display: swap;
 }
 
 /* Pogonia Semibold (600) */
 @font-face {
-    font-family: 'Pogonia'; 
+    font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaSemibold.woff2') format('woff2'),
         url('/assets/fonts/PogoniaSemibold.woff') format('woff');
-    font-weight: 600; /* font-semibold */
+    font-weight: 600;
+    /* font-semibold */
     font-style: normal;
     font-display: swap;
 }
 
 /* Pogonia Bold (700) */
 @font-face {
-    font-family: 'Pogonia'; 
+    font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaBold.woff2') format('woff2'),
         url('/assets/fonts/PogoniaBold.woff') format('woff');
-    font-weight: 700; /* font-bold */
+    font-weight: 700;
+    /* font-bold */
     font-style: normal;
     font-display: swap;
 }
 
 /* Pogonia Extra Bold (800) -  */
 @font-face {
-    font-family: 'Pogonia'; 
+    font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaExtraBold.woff2') format('woff2'),
         url('/assets/fonts/PogoniaExtraBold.woff') format('woff');
-    font-weight: 800; /* font-extrabold */
+    font-weight: 800;
+    /* font-extrabold */
     font-style: normal;
     font-display: swap;
 }
 
 /* Pogonia Black (900) */
 @font-face {
-    font-family: 'Pogonia'; 
+    font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaBlack.woff2') format('woff2'),
         url('/assets/fonts/PogoniaBlack.woff') format('woff');
-    font-weight: 900; /* font-black */
+    font-weight: 900;
+    /* font-black */
     font-style: normal;
     font-display: swap;
 }
 
 
-      .hamburger span {
-            transition: all 0.3s ease;
-        }
-        
-        .hamburger.active span:nth-child(1) {
-            transform: rotate(135deg) translate(7px, 7px);
-        }
-        
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-            transform: translateX(-20px);
-        }
-        
-        .hamburger.active span:nth-child(3) {
-            transform: rotate(-135deg) translate(7px, -7px);
-        }
+.hamburger span {
+    transition: all 0.3s ease;
+}
 
-        .dropdown-content {
-            transition: all 0.3s ease;
-        }
+.hamburger.active span:nth-child(1) {
+    transform: rotate(135deg) translate(7px, 7px);
+}
 
-        .dropdown:hover .dropdown-content {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
-        }
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
 
-        .dropdown:hover .dropdown-arrow {
-            transform: rotate(180deg);
-        }
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-135deg) translate(7px, -7px);
+}
 
-        @media (min-width: 1025px) {
-            .mobile-menu, .mobile-overlay {
-                display: none !important;
-            }
-        }
+.dropdown-content {
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+@media (min-width: 1025px) {
+
+    .mobile-menu,
+    .mobile-overlay {
+        display: none !important;
+    }
+}
+
 /* Header css end */
 
 
 
 
-    /* Minimal custom styles for Splide */
-    .brand-section-wrapper{
-        background-image: url(../images/brandbg.webp);
-    }
-      .brand-section-wrapper .splide__track {
-            overflow: visible !important;
-        }
-        
-        .brand-section-wrapper .splide__slide {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .brand-section-wrapper .brand-logo-wrapper {
-            transition: all 0.3s ease;
-        }
-        
-        .brand-section-wrapper .brand-logo-wrapper:hover {
-            transform: translateY(-5px);
-        }
+/* Minimal custom styles for Splide */
+.brand-section-wrapper {
+    background-image: url(../images/brandbg.webp);
+}
+
+.brand-section-wrapper .splide__track {
+    overflow: visible !important;
+}
+
+.brand-section-wrapper .splide__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-section-wrapper .brand-logo-wrapper {
+    transition: all 0.3s ease;
+}
+
+.brand-section-wrapper .brand-logo-wrapper:hover {
+    transform: translateY(-5px);
+}
 
 
 
 
-    /* Service section start */
-    .service-wrap-section .service-image-item img{
-        border-radius: 24px 125px 24px 24px;
-    }
-    .service-grid-item{
-        background: var(--Gradiant, linear-gradient(139deg, #076AAB 1.04%, #BDEB11 84.2%));
-    }
+/* Service section start */
+.service-wrap-section .service-image-item img {
+    border-radius: 24px 125px 24px 24px;
+}
+
+.service-grid-item {
+    background: var(--Gradiant, linear-gradient(139deg, #076AAB 1.04%, #BDEB11 84.2%));
+}
 
 
 
 
 
-    .service-grid-item {
+.service-grid-item {
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -369,4 +387,215 @@ body{
 }
 
 
-    /* Service section end */
+/* Service section end */
+
+
+/* aichangedseo section start */
+.aichangedseo {
+    background-image: url('/assets/images/aichangedseo.webp');
+}
+
+/* aichangedseo section end */
+
+
+
+
+
+/* case study Splide Custom Styles */
+/* Splide Container */
+.case-study-slider {
+    overflow: visible;
+}
+
+.case-study-slider .splide__track {
+    cursor: grab;
+    padding: 10px 0;
+    overflow: visible;
+}
+
+.case-study-slider .splide__track:active {
+    cursor: grabbing;
+}
+
+.case-study-slider .splide__list {
+    will-change: transform;
+    transition-timing-function: linear !important;
+    /* Smooth marquee effect */
+}
+
+/* Slide spacing */
+.case-study-slider .splide__slide {
+    height: auto;
+}
+
+/* Card styling */
+.case-slider-wrapper {
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-slider-wrapper:hover {
+    transform: translateY(-6px);
+    z-index: 10;
+}
+
+/* Ensure cards same height */
+.case-study-slider .splide__slide .case-slider-wrapper>div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Smooth peek effect */
+.case-study-slider .splide__slide:not(.is-active) {
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.case-study-slider .splide__slide:hover {
+    opacity: 1;
+}
+
+
+.case-study-slider .splide__pagination {
+    bottom: -2.5em;
+}
+
+.case-study-slider .splide__pagination .splide__pagination__page {
+    height: 12px;
+    width: 12px;
+    background-color: #D1D5DB;
+}
+
+.case-study-slider .splide__pagination__page.is-active {
+    transform: scale(1);
+    background-color: #076AAB;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* video review slider here   */
+.video-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.video-thumbnail video {
+    pointer-events: none;
+}
+
+/* Popup styles */
+.video-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.video-popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.video-popup-content {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.video-popup.active .video-popup-content {
+    transform: scale(1);
+}
+
+.video-popup video {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.close-popup {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.close-popup:hover {
+    transform: rotate(90deg);
+}
+
+
+
+
+
+.video-review-wrap .splide__pagination {
+    bottom: -2.5em;
+}
+
+.video-review-wrap .splide__pagination .splide__pagination__page {
+    height: 12px;
+    width: 12px;
+    background-color: #D1D5DB;
+}
+
+.video-review-wrap .splide__pagination__page.is-active {
+    transform: scale(1);
+    background-color: #076AAB;
+    opacity: 1;
+}
+
+
+/* video review slider here end  */
+
+
+
+/* counter start */
+.counter-item {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.counter-item:hover {
+    z-index: 10 !important;
+    transform: translateY(-8px) scale(1.02);
+}
+
+.counter-item:hover img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+.counter-number {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* counter end  */
