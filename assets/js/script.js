@@ -72,8 +72,8 @@ document.addEventListener('DOMContentLoaded', function () {
             breakpoints: {
                 1280: { perPage: 5, gap: '1.5rem' },
                 1024: { perPage: 4, gap: '1.5rem' },
-                768: { perPage: 3, gap: '1rem' },
-                640: { perPage: 2, gap: '1rem' }
+                768: { perPage: 4, gap: '1rem' },
+                640: { perPage: 3, gap: '1rem' }
             }
         }).mount(window.splide.Extensions);
     }
@@ -368,4 +368,54 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', updateProgressBar);
     window.addEventListener('resize', updateProgressBar);
     updateProgressBar();
+});
+
+
+//faq
+
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+    
+    faqItems.forEach(item => {
+        const trigger = item.querySelector('.faq-trigger');
+        const content = item.querySelector('.faq-content');
+        const border = item.querySelector('.faq-border');
+        const iconClose = item.querySelector('.icon-close');
+        const iconOpen = item.querySelector('.icon-open');
+        
+        trigger.addEventListener('click', function() {
+            const isOpen = item.classList.contains('active');
+            
+            // Close all other items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                    const otherContent = otherItem.querySelector('.faq-content');
+                    const otherBorder = otherItem.querySelector('.faq-border');
+                    const otherIconClose = otherItem.querySelector('.icon-close');
+                    const otherIconOpen = otherItem.querySelector('.icon-open');
+                    
+                    otherContent.style.maxHeight = '0';
+                    otherBorder.classList.add('hidden');
+                    otherIconClose.classList.remove('hidden');
+                    otherIconOpen.classList.add('hidden');
+                }
+            });
+            
+            // Toggle current item
+            if (isOpen) {
+                item.classList.remove('active');
+                content.style.maxHeight = '0';
+                border.classList.add('hidden');
+                iconClose.classList.remove('hidden');
+                iconOpen.classList.add('hidden');
+            } else {
+                item.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + 'px';
+                border.classList.remove('hidden');
+                iconClose.classList.add('hidden');
+                iconOpen.classList.remove('hidden');
+            }
+        });
+    });
 });
