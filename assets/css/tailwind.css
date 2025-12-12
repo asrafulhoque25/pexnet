@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-
     --color-primary-main: #076AAB;
     --color-primary-shad: #EAF4FA;
     --color-primary-forgeine: #90C9EE;
@@ -30,7 +29,6 @@
     --color-gray-300: #D1D5DB;
     --color-circle-bg: #90C9EE;
 
-
     --text-heading1: 5.5rem;
     --text-heading2: 3rem;
     --text-heading3: 2.25rem;
@@ -44,10 +42,8 @@
     --text-body5: 12px;
     --text-button1: 20px;
 
-
     --font-pogonia: 'Pogonia';
 }
-
 
 .container {
     max-width: 1800px;
@@ -61,7 +57,6 @@ body {
     background-color: #F9FAFB;
 }
 
-
 @layer base {
     .img-fluid {
         max-width: 100%;
@@ -73,106 +68,93 @@ body {
     padding: 120px 0;
 }
 
-/* Pogonia Thin (100) */
+.bg-primary-gradient {
+    background: var(--Gradiant, linear-gradient(139deg, #076AAB 1.04%, #BDEB11 84.2%));
+}
+
+/* ========== FONT FACES ========== */
 @font-face {
     font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaThin.woff2') format('woff2'),
         url('/assets/fonts/PogoniaThin.woff') format('woff');
     font-weight: 100;
-    /* font-thin */
     font-style: normal;
     font-display: swap;
 }
 
-/* Pogonia Extra Light */
 @font-face {
     font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaExtraLight.woff2') format('woff2'),
         url('/assets/fonts/PogoniaExtraLight.woff') format('woff');
     font-weight: 200;
-    /* font-extralight */
     font-style: normal;
     font-display: swap;
 }
 
-/* Pogonia Light (300) */
 @font-face {
     font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaLight.woff2') format('woff2'),
         url('/assets/fonts/PogoniaLight.woff') format('woff');
     font-weight: 300;
-    /* font-light */
     font-style: normal;
     font-display: swap;
 }
 
-/* Pogonia Regular (400) */
 @font-face {
     font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaRegular.woff2') format('woff2'),
         url('/assets/fonts/PogoniaRegular.woff') format('woff');
     font-weight: 400;
-    /* font-normal */
     font-style: normal;
     font-display: swap;
 }
 
-/* Pogonia Medium (500) */
 @font-face {
     font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaMedium.woff2') format('woff2'),
         url('/assets/fonts/PogoniaMedium.woff') format('woff');
     font-weight: 500;
-    /* font-medium */
     font-style: normal;
     font-display: swap;
 }
 
-/* Pogonia Semibold (600) */
 @font-face {
     font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaSemibold.woff2') format('woff2'),
         url('/assets/fonts/PogoniaSemibold.woff') format('woff');
     font-weight: 600;
-    /* font-semibold */
     font-style: normal;
     font-display: swap;
 }
 
-/* Pogonia Bold (700) */
 @font-face {
     font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaBold.woff2') format('woff2'),
         url('/assets/fonts/PogoniaBold.woff') format('woff');
     font-weight: 700;
-    /* font-bold */
     font-style: normal;
     font-display: swap;
 }
 
-/* Pogonia Extra Bold (800) -  */
 @font-face {
     font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaExtraBold.woff2') format('woff2'),
         url('/assets/fonts/PogoniaExtraBold.woff') format('woff');
     font-weight: 800;
-    /* font-extrabold */
     font-style: normal;
     font-display: swap;
 }
 
-/* Pogonia Black (900) */
 @font-face {
     font-family: 'Pogonia';
     src: url('/assets/fonts/PogoniaBlack.woff2') format('woff2'),
         url('/assets/fonts/PogoniaBlack.woff') format('woff');
     font-weight: 900;
-    /* font-black */
     font-style: normal;
     font-display: swap;
 }
 
-
+/* ========== HEADER & NAVIGATION ========== */
 .hamburger span {
     transition: all 0.3s ease;
 }
@@ -205,19 +187,13 @@ body {
 }
 
 @media (min-width: 1025px) {
-
     .mobile-menu,
     .mobile-overlay {
         display: none !important;
     }
 }
 
-/* Header css end */
-
-
-
-
-/* Minimal custom styles for Splide */
+/* ========== BRAND SECTION ========== */
 .brand-section-wrapper {
     background-image: url(../images/brandbg.webp);
 }
@@ -240,23 +216,13 @@ body {
     transform: translateY(-5px);
 }
 
-
-
-
-/* Service section start */
+/* ========== SERVICE SECTION ========== */
 .service-wrap-section .service-image-item img {
     border-radius: 24px 125px 24px 24px;
 }
 
 .service-grid-item {
     background: var(--Gradiant, linear-gradient(139deg, #076AAB 1.04%, #BDEB11 84.2%));
-}
-
-
-
-
-
-.service-grid-item {
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -266,7 +232,6 @@ body {
     transform: translateY(-4px);
 }
 
-/* Background color transition - smooth and simple */
 .service-grid-item-bg-white {
     position: relative;
     transition: background-color 0.4s ease;
@@ -296,7 +261,6 @@ body {
     background: transparent;
 }
 
-/* Text animations - minimal movement */
 .service-grid-item h4 {
     transition: color 0.3s ease 0.05s;
 }
@@ -321,7 +285,6 @@ body {
     color: #fff;
 }
 
-/* Icon animation - subtle scale only */
 .service-item-icon-wrap {
     transition: transform 0.3s ease 0.05s;
 }
@@ -330,34 +293,28 @@ body {
     transform: scale(1.05);
 }
 
-.service-item-icon-wrap svg * {
-    transition: fill 0.3s ease 0.12s;
+.service-item-icon-wrap img {
+    transition: filter 0.3s ease 0.12s;
 }
 
-.service-grid-item:hover .service-item-icon-wrap svg * {
-    fill: #fff;
+.service-grid-item:hover .service-item-icon-wrap img {
+    filter: brightness(0) invert(1);
 }
 
-/* Right SVG - smooth color change */
 .service-item-svg-right svg {
     transition: transform 0.3s ease 0.1s;
 }
 
-.service-grid-item:hover .service-item-svg-right svg {
+.service-grid-item:hover .service-item-svg-right img {
     transform: scale(1.05);
+    filter: brightness(0) saturate(100%) invert(52%) sepia(97%) saturate(1989%) hue-rotate(188deg) brightness(94%) contrast(90%);
 }
 
-.service-item-svg-right svg * {
-    transition: fill 0.3s ease 0.15s;
+.service-item-svg-right img {
+    transition: filter 0.3s ease 0.15s;
 }
 
-.service-grid-item:hover .service-item-svg-right svg * {
-    fill: #1191E5;
-}
-
-/* Arrow button - smooth gradient */
 .service-arrow-button-wrap {
-    /* position: relative; */
     overflow: hidden;
     transition: transform 0.3s ease 0.12s;
 }
@@ -386,23 +343,12 @@ body {
     background: linear-gradient(139deg, #076AAB 1.04%, #BDEB11 84.2%);
 }
 
-
-/* Service section end */
-
-
-/* aichangedseo section start */
+/* ========== AI CHANGED SEO SECTION ========== */
 .aichangedseo {
     background-image: url('/assets/images/aichangedseo.webp');
 }
 
-/* aichangedseo section end */
-
-
-
-
-
-/* case study Splide Custom Styles */
-/* Splide Container */
+/* ========== CASE STUDY SLIDER ========== */
 .case-study-slider {
     overflow: visible;
 }
@@ -420,15 +366,12 @@ body {
 .case-study-slider .splide__list {
     will-change: transform;
     transition-timing-function: linear !important;
-    /* Smooth marquee effect */
 }
 
-/* Slide spacing */
 .case-study-slider .splide__slide {
     height: auto;
 }
 
-/* Card styling */
 .case-slider-wrapper {
     height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -439,14 +382,12 @@ body {
     z-index: 10;
 }
 
-/* Ensure cards same height */
 .case-study-slider .splide__slide .case-slider-wrapper>div {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-/* Smooth peek effect */
 .case-study-slider .splide__slide:not(.is-active) {
     opacity: 0.85;
     transition: opacity 0.3s ease;
@@ -455,7 +396,6 @@ body {
 .case-study-slider .splide__slide:hover {
     opacity: 1;
 }
-
 
 .case-study-slider .splide__pagination {
     bottom: -2.5em;
@@ -473,17 +413,7 @@ body {
     opacity: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* video review slider here   */
+/* ========== VIDEO REVIEW SLIDER ========== */
 .video-item {
     position: relative;
     overflow: hidden;
@@ -493,7 +423,6 @@ body {
     pointer-events: none;
 }
 
-/* Popup styles */
 .video-popup {
     position: fixed;
     top: 0;
@@ -554,10 +483,6 @@ body {
     transform: rotate(90deg);
 }
 
-
-
-
-
 .video-review-wrap .splide__pagination {
     bottom: -2.5em;
 }
@@ -574,12 +499,7 @@ body {
     opacity: 1;
 }
 
-
-/* video review slider here end  */
-
-
-
-/* counter start */
+/* ========== COUNTER SECTION ========== */
 .counter-item {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -598,4 +518,211 @@ body {
     line-height: 1.2;
 }
 
-/* counter end  */
+/* ========== TESTIMONIAL CONTENT SLIDER ========== */
+.testimonial-real-content-slider-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.testimonial-real-content-slider-card:hover .quote-icon img {
+    filter: brightness(1.45) saturate(1.1) hue-rotate(2deg);
+    transition: filter 0.3s ease;
+}
+
+/* ========== TOOLS WE PREFER ========== */
+.tools-we-prefer-wrap {
+    background-image: url('/assets/images/preferbg.png');
+}
+
+/* ========== BLOG CARD ========== */
+.latest-blog-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.latest-blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.latest-blog-card-arrow {
+    position: absolute;
+    bottom: 24px;
+    right: -20px;
+    width: 48px;
+    height: 48px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.latest-blog-card:hover .latest-blog-card-arrow {
+    background: #0369a1;
+    right: -24px;
+}
+
+.latest-blog-card-arrow svg {
+    fill: #0369a1;
+    width: 20px;
+    height: 20px;
+    transition: fill 0.3s ease;
+}
+
+.latest-blog-card:hover .latest-blog-card-arrow svg {
+    fill: white;
+}
+
+/* ========== SPLIDE ARROWS - COMMON STYLES ========== */
+.splide__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.splide__arrow svg {
+    display: block !important;
+    width: 20px !important;
+    height: 20px !important;
+    fill: none !important;
+}
+
+/* Hide all default splide arrows */
+.latest-blog-slider .splide__arrows,
+.testimonial-real-content-slider-main .splide__arrows {
+    display: none !important;
+}
+
+/* ========== TESTIMONIAL SLIDER ARROWS ========== */
+.testimonial-real-content-slider-arrows-desktop,
+.testimonial-real-content-slider-arrows-mobile {
+    gap: 12px;
+    justify-content: center;
+}
+
+.testimonial-real-content-slider-arrows-desktop .splide__arrow,
+.testimonial-real-content-slider-arrows-mobile .splide__arrow {
+    position: static;
+    background: transparent;
+    border: 1px solid #e5e7eb;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    opacity: 1;
+    transform: none;
+    transition: .3s all linear;
+}
+
+.testimonial-real-content-slider-arrows-desktop .splide__arrow:hover,
+.testimonial-real-content-slider-arrows-mobile .splide__arrow:hover {
+    background: #1e40af;
+    border-color: #1e40af;
+}
+
+.testimonial-real-content-slider-arrows-desktop .splide__arrow:hover svg path,
+.testimonial-real-content-slider-arrows-mobile .splide__arrow:hover svg path {
+    stroke: #fff !important;
+}
+
+.testimonial-real-content-slider-arrows-mobile {
+    margin-top: 32px;
+}
+
+/* Responsive - Desktop Only */
+.testimonial-real-content-slider-arrows-desktop {
+    display: none !important;
+}
+
+@media (min-width: 1024px) {
+    .testimonial-real-content-slider-arrows-desktop {
+        display: flex !important;
+    }
+}
+
+/* Responsive - Mobile Only */
+.testimonial-real-content-slider-arrows-mobile {
+    display: flex !important;
+}
+
+@media (min-width: 1024px) {
+    .testimonial-real-content-slider-arrows-mobile {
+        display: none !important;
+    }
+}
+
+/* ========== BLOG SLIDER ARROWS ========== */
+.latest-blog-slider-arrows-desktop,
+.latest-blog-slider-arrows-mobile {
+    gap: 16px;
+}
+
+.latest-blog-slider-arrows-desktop {
+    justify-content: flex-end;
+}
+
+.latest-blog-slider-arrows-mobile {
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.latest-blog-slider-arrows-desktop .splide__arrow,
+.latest-blog-slider-arrows-mobile .splide__arrow {
+    position: static;
+    background: #e0f2fe;
+    border: none;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    opacity: 1;
+    transform: none;
+    transition: all 0.3s ease;
+}
+
+.latest-blog-slider-arrows-desktop .splide__arrow:hover,
+.latest-blog-slider-arrows-mobile .splide__arrow:hover {
+    background: #0369a1;
+}
+
+.latest-blog-slider-arrows-desktop .splide__arrow path,
+.latest-blog-slider-arrows-mobile .splide__arrow path {
+    stroke: #0369a1;
+    transition: stroke 0.3s ease;
+}
+
+.latest-blog-slider-arrows-desktop .splide__arrow:hover path,
+.latest-blog-slider-arrows-mobile .splide__arrow:hover path {
+    stroke: white;
+}
+
+.latest-blog-slider-arrows-desktop .splide__arrow--prev,
+.latest-blog-slider-arrows-mobile .splide__arrow--prev {
+    transform: rotate(180deg);
+}
+
+/* Responsive - Desktop Only */
+.latest-blog-slider-arrows-desktop {
+    display: none !important;
+}
+
+@media (min-width: 1024px) {
+    .latest-blog-slider-arrows-desktop {
+        display: flex !important;
+    }
+}
+
+/* Responsive - Mobile Only */
+.latest-blog-slider-arrows-mobile {
+    display: flex !important;
+}
+
+@media (min-width: 1024px) {
+    .latest-blog-slider-arrows-mobile {
+        display: none !important;
+    }
+}
