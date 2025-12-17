@@ -71,6 +71,12 @@ body {
     .padding-inline-80{
         @apply xl:px-[80px] lg:px-[40px] sm:px-[20px] px-[16px];
     }
+    .padding-inline-20{
+        @apply xl:px-[80px] lg:px-[40px] sm:px-[20px] px-[12px];
+    }
+    .padding-block-20{
+        @apply xl:py-[80px] lg:py-[40px] py-[40px] ;
+    }
     .padding-block-80{
         @apply xl:py-[80px] lg:py-[60px] sm:py-[48px] py-[40px];
     }
@@ -245,7 +251,7 @@ body {
     transform: translateY(-4px);
 }
 
-.service-grid-item-bg-white {
+/* .service-grid-item-bg-white {
     position: relative;
     transition: background-color 0.4s ease;
     z-index: 1;
@@ -272,8 +278,14 @@ body {
 
 .service-grid-item:hover .service-grid-item-bg-white {
     background: transparent;
-}
+} */
 
+.service-grid-item-bg-white{
+    transition: .3s all linear;
+}
+.service-grid-item:hover .service-grid-item-bg-white{
+    background-color: #076AAB;
+}
 .service-grid-item h4 {
     transition: color 0.3s ease 0.05s;
 }
@@ -766,3 +778,95 @@ body {
 }
 /* contactus end */
 
+
+
+
+/* Custom CSS for the Button Animation */
+.commonBtn {
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.commonBtn .mainbtn {
+    transition: 
+        transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+        background 0.3s, 
+        color 0.3s;
+    margin: 0;
+    transform: translateX(0);
+}
+
+.commonBtn .icon-scale {
+    transition: opacity 0.6s ease, transform 0.6s ease, width 0.6s ease;
+    flex-shrink: 0;
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 74px;
+    object-fit: contain;
+}
+.commonBtn .icon-scale.smallbtnicon {
+    height: 50px !important;
+}
+@media (max-width:1024px) {
+    .commonBtn .icon-scale {
+    height: 40px;
+    }
+}
+
+.commonBtn .icon-scale.is-2:first-child {
+    opacity: 0;
+    width: 0; 
+    transform: scale(0);
+}
+
+/* Hover Effect */
+.commonBtn:hover .icon-scale.is-2:first-child {
+    opacity: 1;
+    width: 74px; 
+    transform: scale(1);
+}
+.commonBtn:hover .icon-scale.smallbtnicon.is-2:first-child {
+    width: 50px; 
+}
+@media (max-width:1024px) {
+   .commonBtn:hover .icon-scale.is-2:first-child {
+    width: 40px;
+    }
+}
+
+.commonBtn .icon-scale.is-2:last-child {
+    width: 74px;
+}
+.commonBtn .icon-scale.smallbtnicon.is-2:last-child {
+    width: 50px; 
+}
+@media (max-width:1024px) {
+   .commonBtn .icon-scale.is-2:last-child {
+    width: 40px;
+    }
+}
+
+.commonBtn:hover .icon-scale.is-2:last-child {
+    opacity: 0;
+    width: 0;
+    transform: scale(0);
+    transition: opacity 0.6s ease, transform 0.6s ease, width 0.6s ease;
+}
+
+.commonBtn:hover .mainbtn {
+    transform: translateX(.01px);
+}
+
+/* White Version */
+.commonBtn.btn-white .mainbtn {
+    background: white;
+    color: #1a1a1a;
+}
+
+/* Black Version */
+.commonBtn.btn-black .mainbtn {
+    background: #1a1a1a;
+    color: white;
+}

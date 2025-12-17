@@ -252,7 +252,8 @@ document.addEventListener('DOMContentLoaded', function () {
             pagination: false,
             breakpoints: {
                 1280: { perPage: 2, gap: '1.5rem' },
-                1024: { perPage: 1, gap: '1.5rem' }
+                991: { perPage: 2, gap: '1.5rem' },
+                767: { perPage: 1, gap: '1.5rem' }
             }
         });
         
