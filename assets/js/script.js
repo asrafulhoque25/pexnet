@@ -163,7 +163,10 @@ function initVideoTestimonialSlider() {
     });
     videoslider.mount(window.splide.Extensions);
 
-    // Video Popup Functionality
+    
+}
+
+  // Video Popup Functionality
     const popup = document.getElementById('videoPopup');
     const popupVideo = document.getElementById('popupVideo');
     const closeBtn = document.getElementById('closePopup');
@@ -197,7 +200,6 @@ function initVideoTestimonialSlider() {
             }
         });
     }
-}
 
 // ========== CONTENT TESTIMONIAL SLIDER ==========
 function initContentTestimonialSlider() {
@@ -534,3 +536,6 @@ function initServicesTab() {
         });
     });
 }
+
+
+
