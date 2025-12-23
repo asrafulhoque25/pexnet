@@ -1383,9 +1383,6 @@
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
   }
-  .pb-20 {
-    padding-bottom: calc(var(--spacing) * 20);
-  }
   .pb-\[80px\] {
     padding-bottom: 80px;
   }
@@ -2483,6 +2480,11 @@
   .md\:pb-12 {
     @media (width >= 48rem) {
       padding-bottom: calc(var(--spacing) * 12);
+    }
+  }
+  .md\:pb-20 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 20);
     }
   }
   .md\:pb-\[0px\] {
