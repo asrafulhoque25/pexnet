@@ -3266,7 +3266,7 @@ html {
   background: linear-gradient(139deg, #076AAB 1.04%, #BDEB11 84.2%);
 }
 .aichangedseo {
-  background-image: url('/assets/images/aichangedseo.webp');
+  background-image: url('../images/aichangedseo.webp');
 }
 .case-study-slider {
   overflow: visible;
@@ -3414,7 +3414,7 @@ html {
   transition: filter 0.3s ease;
 }
 .tools-we-prefer-wrap {
-  background-image: url('/assets/images/preferbg.png');
+  background-image: url('../images/preferbg.png');
 }
 .latest-blog-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -3426,7 +3426,7 @@ html {
 .blogcardcontent::after {
   content: '';
   position: absolute;
-  background-image: url('/assets/images/Subtractshape.svg');
+  background-image: url('../images/Subtractshape.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -3558,12 +3558,12 @@ html {
   }
 }
 .main-cta {
-  background-image: url('/assets/images/maincta.webp');
+  background-image: url('../images/maincta.webp');
   background-size: cover;
   background-position: center center;
 }
 .contactus {
-  background-image: url('/assets/images/Contactusbg.webp');
+  background-image: url('../images/Contactusbg.webp');
 }
 .commonBtn {
   align-items: center;
@@ -3830,7 +3830,7 @@ html {
   display: block;
 }
 .case-details-banner {
-  background-image: url('/assets/images/case-details.webp');
+  background-image: url('../images/case-details.webp');
 }
 .all-case-details-contents h2 {
   color: #000;
@@ -4242,7 +4242,7 @@ html {
   }
 }
 .heretostart {
-  background-image: url(/assets/images/Contactusbg.webp);
+  background-image: url('../images/Contactusbg.webp');
 }
 @property --tw-translate-x {
   syntax: "*";
