@@ -215,6 +215,20 @@ html {
     }
 }
 
+       #myheader svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Animated paths er jonno mask/clip-path setup */
+        .animated-shape {
+            clip-path: url(#fillClip);
+        }
+
+        #fillRect {
+            transition: none;
+        }
+
 /* ========== BRAND SECTION ========== */
 .brand-section-wrapper {
     background-image: url(../images/brandbg.webp);
@@ -285,6 +299,9 @@ html {
 
 .service-grid-item-bg-white{
     transition: .3s all linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .service-grid-item:hover .service-grid-item-bg-white{
     background-color: #076AAB;
@@ -315,6 +332,12 @@ html {
 
 .service-item-icon-wrap {
     transition: transform 0.3s ease 0.05s;
+}
+
+@media (min-width:1014px) {
+    .service-item-icon-wrap {
+    margin-top: -20px;
+}
 }
 
 .service-grid-item:hover .service-item-icon-wrap {
@@ -1600,4 +1623,5 @@ font-size: 18px;
   .heretostart{
         background-image: url(/assets/images/Contactusbg.webp);
   }
+  
   /* Here to start end */

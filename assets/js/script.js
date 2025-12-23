@@ -539,3 +539,63 @@ function initServicesTab() {
 
 
 
+//logo animaion
+
+ // Animation control variables
+        const fillRect = document.getElementById('fillRect');
+        const totalHeight = 40; // SVG height
+        const animationDuration = 1500; // 1.5 seconds for fill
+        const delayBeforeStart = 2000; // 2 seconds initial delay
+        const delayBetweenCycles = 500; // 0.5 second delay between fill and empty
+
+        let animationFrame;
+        let startTime;
+        let isFillingUp = true;
+        let hasStarted = false;
+
+        function easeInOutCubic(t) {
+            return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+        }
+
+        function animate(currentTime) {
+            if (!startTime) startTime = currentTime;
+            
+            const elapsed = currentTime - startTime;
+            let progress = Math.min(elapsed / animationDuration, 1);
+            
+            // Apply easing
+            progress = easeInOutCubic(progress);
+
+            if (isFillingUp) {
+                // Bottom theke upor e fill hobe
+                const currentHeight = totalHeight * progress;
+                const yPosition = totalHeight - currentHeight;
+                
+                fillRect.setAttribute('y', yPosition);
+                fillRect.setAttribute('height', currentHeight);
+            } else {
+                // Upor theke bottom e empty hobe (reverse)
+                const currentHeight = totalHeight * (1 - progress);
+                const yPosition = totalHeight - currentHeight;
+                
+                fillRect.setAttribute('y', yPosition);
+                fillRect.setAttribute('height', currentHeight);
+            }
+
+            if (progress < 1) {
+                animationFrame = requestAnimationFrame(animate);
+            } else {
+                // Animation cycle complete
+                setTimeout(() => {
+                    isFillingUp = !isFillingUp;
+                    startTime = null;
+                    animationFrame = requestAnimationFrame(animate);
+                }, delayBetweenCycles);
+            }
+        }
+
+        // Initial delay then start animation
+        setTimeout(() => {
+            hasStarted = true;
+            animationFrame = requestAnimationFrame(animate);
+        }, delayBeforeStart);
